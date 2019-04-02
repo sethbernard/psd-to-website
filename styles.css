@@ -206,3 +206,116 @@ footer h3 {
 .btn5 {
   background-color: #da535b;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav a {
+    margin-left: 30px;
+  }
+
+  .hero {
+    align-items: center;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  .row img {
+    height: 200px;
+    width: 300px;
+  }
+
+  ul.services {
+    flex-wrap: wrap;
+  }
+
+  ul.services li {
+    width: 50%;
+  }
+
+  section.blog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul.articles li {
+    text-align: center;
+    width: 50%;
+  }
+
+  .row2 li {
+    margin: 0;
+  }
+
+  .row2 img {
+    float: none !important;
+  }
+
+  .row2 h5 {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    text-align: center;
+  }
+  nav a {
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    text-align: center;
+    height: 300px;
+  }
+
+  .hero p {
+    padding: 0 15px;
+  }
+
+  section.portfolio img {
+    margin: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .contact {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.articles li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .row2 {
+    flex-direction: column;
+  }
+
+  .row2 img {
+    float: none !important;
+    text-align: center;
+  }
+
+  .row2 h5 {
+    padding-top: 20px;
+  }
+
+  .row2 p {
+    margin-bottom: 5px;
+  }
+
+  footer {
+    margin-top: 40px;
+    text-align: center;
+  }
+}
