@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -78,10 +79,10 @@ button {
   color: #4d4d4d;
 }
 
-.row {
+.img-grid-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -100,12 +101,12 @@ button {
   font-weight: 300;
 }
 
-section h3 {
+.title {
   margin-bottom: 20px;
   color: #4d4d4d;
 }
 
-p {
+section p {
   color: #4d4d4d;
   font-weight: 300;
   line-height: 1.5rem;
@@ -118,7 +119,7 @@ p {
   text-align: center;
 }
 
-li img {
+.services img {
   margin-top: 50px;
 }
 
@@ -128,11 +129,11 @@ li p {
   margin-bottom: 60px;
 }
 
-.row2 img {
+.articles-row img {
   float: left;
 }
 
-.row2 {
+.articles-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -140,15 +141,16 @@ li p {
   margin-top: 30px;
 }
 
-.row2 img {
+.articles-row img {
   margin-right: 30px;
 }
 
-.row2 p {
+.articles-row p {
   line-height: 1.5rem;
   margin-top: 20px;
+  overflow: hidden;
 }
-.row2:after {
+.articles-row:after {
   display: flex;
   content: '';
   clear: both;
@@ -207,7 +209,7 @@ footer h3 {
   background-color: #da535b;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1271px) {
   nav a {
     margin-left: 30px;
   }
@@ -216,11 +218,11 @@ footer h3 {
     align-items: center;
   }
 
-  .row {
+  .img-grid-row {
     flex-wrap: nowrap;
   }
 
-  .row img {
+  .img-grid-row img {
     height: 200px;
     width: 300px;
   }
@@ -243,20 +245,24 @@ footer h3 {
     width: 50%;
   }
 
-  .row2 li {
+  .articles-row li {
     margin: 0;
   }
 
-  .row2 img {
+  .articles-row img {
     float: none !important;
   }
 
-  .row2 h5 {
+  .articles-row h5 {
     padding-top: 20px;
   }
 }
 
 @media (max-width: 767px) {
+  .main-container {
+    text-align: center;
+  }
+
   nav {
     text-align: center;
   }
@@ -278,13 +284,16 @@ footer h3 {
     margin: 0;
   }
 
-  .row {
+  .img-grid-row {
     margin: 0;
   }
 
   .contact {
     text-align: center;
     padding: 0 10px;
+  }
+  .section-header {
+    margin: 40px;
   }
 
   .services {
@@ -297,25 +306,26 @@ footer h3 {
     width: 100%;
   }
 
-  .row2 {
+  .articles-row {
     flex-direction: column;
   }
 
-  .row2 img {
+  .articles-row img {
     float: none !important;
     text-align: center;
   }
 
-  .row2 h5 {
+  .articles-row h5 {
     padding-top: 20px;
   }
 
-  .row2 p {
+  .articles-row p {
     margin-bottom: 5px;
   }
 
   footer {
     margin-top: 40px;
+    padding: 20px;
     text-align: center;
   }
 }
